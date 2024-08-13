@@ -1,5 +1,6 @@
 import React from "react";
 import ContextParent from "./components/Context/ContextParent";
+import { ChildA } from "./components/Context/ContextChildren";
 // import ParentFive from "./components/Incorrect Optimization/ParentFive";
 // import ParentFour from "./components/Incorrect Optimization/ParentFour";
 // import ParentOne from "./components/Optimization/ParentOne";
@@ -27,7 +28,9 @@ function App() {
       {/* <GrandParent /> */}
       {/* <ParentFour /> */}
       {/* <ParentFive /> */}
-      <ContextParent />
+      <ContextParent>
+        <ChildA />
+      </ContextParent>
     </>
   );
 }
